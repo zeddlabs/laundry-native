@@ -99,7 +99,7 @@ if (isset($_POST['login'])) {
     <script src="assets/js/sb-admin-2.min.js"></script>
 
     <script>
-        console.log('akun admin : username = admin, password = admin\nakun kasir : username = kasir, password = kasir\nakun owner : username = owner, password = owner\ninstagram : https://www.instagram.com/zulfikar.pinem\ngithub : https://github.com/IjulDev');
+        console.log(atob('YWt1biBhZG1pbiA6IHVzZXJuYW1lID0gYWRtaW4sIHBhc3N3b3JkID0gYWRtaW4KYWt1biBrYXNpciA6IHVzZXJuYW1lID0ga2FzaXIsIHBhc3N3b3JkID0ga2FzaXIKYWt1biBvd25lciA6IHVzZXJuYW1lID0gb3duZXIsIHBhc3N3b3JkID0gb3duZXIKaW5zdGFncmFtIDogaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS96dWxmaWthci5waW5lbQpnaXRodWIgOiBodHRwczovL2dpdGh1Yi5jb20vSWp1bERldg=='));
     </script>
 
 </body>
