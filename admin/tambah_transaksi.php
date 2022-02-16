@@ -46,7 +46,7 @@ if (isset($_POST['simpan'])) {
             <div class="row card-body">
                 <div class="col-md">
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet">
+                        <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet" required>
                             <option selected disabled>Pilih outlet</option>
                             <?php foreach ($outlet as $o) : ?>
                                 <option value="<?= $o['id']; ?>"><?= $o['nama']; ?></option>
@@ -59,7 +59,7 @@ if (isset($_POST['simpan'])) {
                         <label for="invoice">Kode Invoice</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="member" aria-label="Floating label select example" name="member">
+                        <select class="form-select" id="member" aria-label="Floating label select example" name="member" required>
                             <option selected disabled>Pilih member</option>
                             <?php foreach ($member as $m) : ?>
                                 <option value="<?= $m['id']; ?>"><?= $m['nama']; ?></option>
@@ -68,11 +68,11 @@ if (isset($_POST['simpan'])) {
                         <label for="member">Member</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="date" class="form-control" id="tgl" placeholder="" name="tgl" readonly value="<?= date('Y-m-d'); ?>">
+                        <input type="date" class="form-control" id="tgl" placeholder="" name="tgl" readonly value="<?= date('Y-m-d'); ?>" required>
                         <label for="tgl">Tanggal Transaksi</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="date" class="form-control" id="batas" placeholder="" name="batas">
+                        <input type="date" class="form-control" id="batas" placeholder="" name="batas" required>
                         <label for="batas">Batas Waktu</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -82,18 +82,18 @@ if (isset($_POST['simpan'])) {
                 </div>
                 <div class="col-md">
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="tambahan" placeholder="" name="tambahan">
+                        <input type="number" class="form-control" id="tambahan" placeholder="" name="tambahan" required>
                         <label for="tambahan">Biaya Tambahan</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="dibayar" aria-label="Floating label select example" name="dibayar">
+                        <select class="form-select" id="dibayar" aria-label="Floating label select example" name="dibayar" required>
                             <option value="belum dibayar" selected>Belum Dibayar</option>
                             <option value="dibayar">Dibayar</option>
                         </select>
                         <label for="dibayar">Status Pembayaran</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="user" aria-label="Floating label select example" name="user">
+                        <select class="form-select" id="user" aria-label="Floating label select example" name="user" required>
                             <option selected disabled>Pilih user</option>
                             <?php foreach ($user as $u) : ?>
                                 <option value="<?= $u['id']; ?>"><?= $u['nama']; ?></option>
@@ -102,7 +102,7 @@ if (isset($_POST['simpan'])) {
                         <label for="user">Petugas</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="paket" aria-label="Floating label select example" name="paket">
+                        <select class="form-select" id="paket" aria-label="Floating label select example" name="paket" required>
                             <option selected disabled>Pilih paket</option>
                             <?php foreach ($paket as $p) : ?>
                                 <option value="<?= $p['id']; ?>"><?= $p['nama_paket']; ?></option>
@@ -112,11 +112,11 @@ if (isset($_POST['simpan'])) {
                         <label for="paket">Petugas</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="qty" placeholder="" name="qty">
+                        <input type="number" class="form-control" id="qty" placeholder="" name="qty" required>
                         <label for="qty">Qty</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea name="keterangan" id="keterangan" class="form-control" placeholder=""></textarea>
+                        <textarea name="keterangan" id="keterangan" class="form-control" placeholder="" required></textarea>
                         <label for="keterangan">Keterangan</label>
                     </div>
                     <button type="submit" class="btn btn-primary float-right" name="simpan">Simpan</button>

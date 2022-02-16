@@ -41,7 +41,7 @@ if (isset($_POST['simpan'])) {
             <div class="col-md">
                 <form action="" method="post">
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet">
+                        <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet" required>
                             <option selected disabled>Pilih outlet</option>
                             <?php foreach ($outlet as $o) : ?>
                                 <option value="<?= $o['id']; ?>"><?= $o['nama']; ?></option>
@@ -50,7 +50,7 @@ if (isset($_POST['simpan'])) {
                         <label for="outlet">Outlet</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="jenis" aria-label="Floating label select example" name="jenis">
+                        <select class="form-select" id="jenis" aria-label="Floating label select example" name="jenis" required>
                             <option selected disabled>Pilih jenis paket</option>
                             <option value="kiloan">Kiloan</option>
                             <option value="selimut">Selimut</option>
@@ -61,11 +61,11 @@ if (isset($_POST['simpan'])) {
                         <label for="jenis">Jenis Paket</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nama" placeholder="" name="nama">
+                        <input type="text" class="form-control" id="nama" placeholder="" name="nama" required>
                         <label for="nama">Nama Paket</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="harga" placeholder="" name="harga">
+                        <input type="number" class="form-control" id="harga" placeholder="" name="harga" required>
                         <label for="harga">Harga</label>
                     </div>
                     <button type="submit" class="btn btn-primary float-right" name="simpan">Simpan</button>

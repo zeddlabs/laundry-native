@@ -39,15 +39,15 @@ if (isset($_POST['simpan'])) {
             <div class="col-md">
                 <form action="" method="post">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nama" placeholder="" name="nama">
+                        <input type="text" class="form-control" id="nama" placeholder="" name="nama" required>
                         <label for="nama">Nama Outlet</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="" id="alamat" name="alamat"></textarea>
+                        <textarea class="form-control" placeholder="" id="alamat" name="alamat" required></textarea>
                         <label for="alamat">Alamat</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="telepon" placeholder="" name="telepon">
+                        <input type="text" class="form-control" id="telepon" placeholder="" name="telepon" required>
                         <label for="telepon">No. Telepon</label>
                     </div>
                     <button type="submit" class="btn btn-primary float-right" name="simpan">Simpan</button>

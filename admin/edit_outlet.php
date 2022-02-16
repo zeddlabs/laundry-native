@@ -43,15 +43,15 @@ if (isset($_POST['update'])) {
                 <form action="" method="post">
                     <input type="hidden" name="id" value="<?= $outlet['id']; ?>">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nama" name="nama" value="<?= $outlet['nama']; ?>">
+                        <input type="text" class="form-control" id="nama" name="nama" value="<?= $outlet['nama']; ?>" required>
                         <label for="nama">Nama Outlet</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" id="alamat" name="alamat"><?= $outlet['alamat']; ?></textarea>
+                        <textarea class="form-control" id="alamat" name="alamat" required><?= $outlet['alamat']; ?></textarea>
                         <label for="alamat">Alamat</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="telepon" name="telepon" value="<?= $outlet['tlp']; ?>">
+                        <input type="text" class="form-control" id="telepon" name="telepon" value="<?= $outlet['tlp']; ?>" required>
                         <label for="telepon">No. Telepon</label>
                     </div>
                     <button type="submit" class="btn btn-primary float-right" name="update">Update</button>

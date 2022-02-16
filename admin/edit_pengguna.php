@@ -44,7 +44,7 @@ if (isset($_POST['update'])) {
                 <form action="" method="post">
                     <input type="hidden" name="id" value="<?= $pengguna['id']; ?>">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nama" placeholder="" name="nama" value="<?= $pengguna['nama']; ?>">
+                        <input type="text" class="form-control" id="nama" placeholder="" name="nama" value="<?= $pengguna['nama']; ?>" required>
                         <label for="nama">Nama</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -52,7 +52,7 @@ if (isset($_POST['update'])) {
                         <label for="username">Username</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet">
+                        <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet" required>
                             <option selected>Pilih outlet</option>
                             <?php foreach ($outlet as $o) : ?>
                                 <option value="<?= $o['id']; ?>" <?= ($pengguna['id_outlet'] == $o['id']) ? 'selected' : ''; ?>><?= $o['nama']; ?></option>
@@ -61,7 +61,7 @@ if (isset($_POST['update'])) {
                         <label for="outlet">Outlet</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="role" aria-label="Floating label select example" name="role">
+                        <select class="form-select" id="role" aria-label="Floating label select example" name="role" required>
                             <option selected>Pilih role</option>
                             <option value="admin" <?= ($pengguna['role'] == 'admin') ? 'selected' : ''; ?>>Admin</option>
                             <option value="kasir" <?= ($pengguna['role'] == 'kasir') ? 'selected' : ''; ?>>Kasir</option>

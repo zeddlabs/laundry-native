@@ -43,15 +43,15 @@ if (isset($_POST['update'])) {
                 <form action="" method="post">
                     <input type="hidden" name="id" value="<?= $pelanggan['id']; ?>">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nama" name="nama" value="<?= $pelanggan['nama']; ?>">
+                        <input type="text" class="form-control" id="nama" name="nama" value="<?= $pelanggan['nama']; ?>" required>
                         <label for="nama">Nama Pelanggan</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" id="alamat" name="alamat"><?= $pelanggan['alamat']; ?></textarea>
+                        <textarea class="form-control" id="alamat" name="alamat" required><?= $pelanggan['alamat']; ?></textarea>
                         <label for="alamat">Alamat</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="jenisKelamin" aria-label="Floating label select example" name="jenisKelamin">
+                        <select class="form-select" id="jenisKelamin" aria-label="Floating label select example" name="jenisKelamin" required>
                             <option>Pilih jenis kelamin</option>
                             <option value="L" <?= ($pelanggan['jenis_kelamin'] == 'L') ? 'selected' : ''; ?>>Laki-laki</option>
                             <option value="P" <?= ($pelanggan['jenis_kelamin'] == 'P') ? 'selected' : ''; ?>>Perempuan</option>
@@ -59,7 +59,7 @@ if (isset($_POST['update'])) {
                         <label for="jenisKelamin">Jenis Kelamin</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="telepon" name="telepon" value="<?= $pelanggan['tlp']; ?>">
+                        <input type="text" class="form-control" id="telepon" name="telepon" value="<?= $pelanggan['tlp']; ?>" required>
                         <label for="telepon">No. Telepon</label>
                     </div>
                     <button type="submit" class="btn btn-primary float-right" name="update">Update</button>

@@ -41,19 +41,19 @@ if (isset($_POST['simpan'])) {
             <div class="col-md">
                 <form action="" method="post">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nama" placeholder="" name="nama">
+                        <input type="text" class="form-control" id="nama" placeholder="" name="nama" required>
                         <label for="nama">Nama</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="username" placeholder="" name="username">
+                        <input type="text" class="form-control" id="username" placeholder="" name="username" required>
                         <label for="username">Username</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="password" placeholder="" name="password">
+                        <input type="password" class="form-control" id="password" placeholder="" name="password" required>
                         <label for="password">Password</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet">
+                        <select class="form-select" id="outlet" aria-label="Floating label select example" name="outlet" required>
                             <option selected>Pilih outlet</option>
                             <?php foreach ($outlet as $o) : ?>
                                 <option value="<?= $o['id']; ?>"><?= $o['nama']; ?></option>
@@ -62,7 +62,7 @@ if (isset($_POST['simpan'])) {
                         <label for="outlet">Outlet</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="role" aria-label="Floating label select example" name="role">
+                        <select class="form-select" id="role" aria-label="Floating label select example" name="role" required>
                             <option selected>Pilih role</option>
                             <option value="admin">Admin</option>
                             <option value="kasir">Kasir</option>

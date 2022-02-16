@@ -43,7 +43,7 @@ if (isset($_POST['update'])) {
                 <form action="" method="post">
                     <input type="hidden" name="id" value="<?= $transaksi['id']; ?>">
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="status" aria-label="Floating label select example" name="status">
+                        <select class="form-select" id="status" aria-label="Floating label select example" name="status" required>
                             <option disabled>Pilih status</option>
                             <option value="baru" <?= ($transaksi['status'] == 'baru') ? 'selected' : ''; ?>>Baru</option>
                             <option value="proses" <?= ($transaksi['status'] == 'proses') ? 'selected' : ''; ?>>Proses</option>
@@ -53,7 +53,7 @@ if (isset($_POST['update'])) {
                         <label for="status">Status</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-select" id="dibayar" aria-label="Floating label select example" name="dibayar">
+                        <select class="form-select" id="dibayar" aria-label="Floating label select example" name="dibayar" required>
                             <option disabled>Pilih status pembayaran</option>
                             <option value="belum dibayar" <?= ($transaksi['dibayar'] == 'belum dibayar') ? 'selected' : ''; ?>>Belum Dibayar</option>
                             <option value="dibayar" <?= ($transaksi['dibayar'] == 'dibayar') ? 'selected' : ''; ?>>Dibayar</option>
