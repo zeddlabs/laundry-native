@@ -30,7 +30,7 @@ if (isset($_POST['login'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>Laundry - Login</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -97,11 +97,6 @@ if (isset($_POST['login'])) {
 
     <!-- Custom scripts for all pages-->
     <script src="assets/js/sb-admin-2.min.js"></script>
-
-    <script>
-        console.log(atob('YWt1biBhZG1pbiA6IHVzZXJuYW1lID0gYWRtaW4sIHBhc3N3b3JkID0gYWRtaW4KYWt1biBrYXNpciA6IHVzZXJuYW1lID0ga2FzaXIsIHBhc3N3b3JkID0ga2FzaXIKYWt1biBvd25lciA6IHVzZXJuYW1lID0gb3duZXIsIHBhc3N3b3JkID0gb3duZXIKaW5zdGFncmFtIDogaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS96dWxmaWthci5waW5lbQpnaXRodWIgOiBodHRwczovL2dpdGh1Yi5jb20vSWp1bERldg=='));
-    </script>
-
 </body>
 
 </html>

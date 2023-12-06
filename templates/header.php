@@ -18,7 +18,7 @@ require '../config/functions.php';
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Zul Laundry - <?= $title; ?></title>
+    <title>Laundry - <?= $title; ?></title>
 
     <!-- Custom fonts for this template-->
     <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
