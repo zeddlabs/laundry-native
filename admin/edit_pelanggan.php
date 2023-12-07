@@ -8,7 +8,7 @@ $pelanggan = query("SELECT * FROM tb_member WHERE id = $id")[0];
 if (isset($_POST['update'])) {
     if (updateDataPelanggan($_POST) > 0) {
         $_SESSION['updated'] = true;
-        header('Location: pelanggan.php');
+        echo "<script>window.location.href = 'pelanggan.php'</script>";
     } else {
         $_SESSION['notUpdated'] = true;
     }

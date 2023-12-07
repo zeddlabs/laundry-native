@@ -9,7 +9,7 @@ $outlet = query("SELECT id, nama FROM tb_outlet");
 if (isset($_POST['update'])) {
     if (updateDataPaket($_POST) > 0) {
         $_SESSION['updated'] = true;
-        header('Location: paket.php');
+        echo "<script>window.location.href = 'paket.php'</script>";
     } else {
         $_SESSION['notUpdated'] = true;
     }

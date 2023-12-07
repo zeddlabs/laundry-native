@@ -5,7 +5,7 @@ include '../templates/header.php';
 if (isset($_POST['simpan'])) {
     if (insertDataOutlet($_POST) > 0) {
         $_SESSION['inserted'] = true;
-        header('Location: outlet.php');
+        echo "<script>window.location.href = 'outlet.php'</script>";
     } else {
         $_SESSION['notInserted'] = true;
     }

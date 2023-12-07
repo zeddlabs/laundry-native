@@ -5,7 +5,7 @@ include '../templates/header.php';
 if (isset($_POST['simpan'])) {
     if (insertDataPelanggan($_POST) > 0) {
         $_SESSION['inserted'] = true;
-        header('Location: pelanggan.php');
+        echo "<script>window.location.href = 'pelanggan.php'</script>";
     } else {
         $_SESSION['notInserted'] = true;
     }

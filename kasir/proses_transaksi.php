@@ -8,7 +8,7 @@ $transaksi = query("SELECT * FROM tb_transaksi WHERE id = $id")[0];
 if (isset($_POST['update'])) {
     if (updateDataTransaksi($_POST) > 0) {
         $_SESSION['updated'] = true;
-        header('Location: transaksi.php');
+        echo "<script>window.location.href = 'transaksi.php'</script>";
     } else {
         $_SESSION['notUpdated'] = true;
     }

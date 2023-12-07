@@ -14,7 +14,7 @@ if (isset($_POST['simpan'])) {
     // var_dump($_POST);
     if (insertDataTransaksi($_POST) > 0) {
         $_SESSION['inserted'] = true;
-        header('Location: transaksi.php');
+        echo "<script>window.location.href = 'transaksi.php'</script>";
     } else {
         $_SESSION['notInserted'] = true;
     }

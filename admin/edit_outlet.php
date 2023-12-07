@@ -8,7 +8,7 @@ $outlet = query("SELECT * FROM tb_outlet WHERE id = $id")[0];
 if (isset($_POST['update'])) {
     if (updateDataOutlet($_POST) > 0) {
         $_SESSION['updated'] = true;
-        header('Location: outlet.php');
+        echo "<script>window.location.href = 'outlet.php'</script>";
     } else {
         $_SESSION['notUpdated'] = true;
     }

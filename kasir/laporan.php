@@ -11,7 +11,7 @@ $pdf->AddPage();
 // menyetel font yang digunakan, font yang digunakan adalah Times, bold dengan ukuran 16
 $pdf->SetFont('Times', 'B', 25);
 // judul
-$pdf->Cell(410, 25, 'LAPORAN TRANSAKSI ZUL LAUNDRY', 0, 1, 'C');
+$pdf->Cell(410, 25, 'LAPORAN TRANSAKSI LAUNDRY', 0, 1, 'C');
 
 
 // Memberikan space kebawah agar tidak terlalu rapat

@@ -7,7 +7,7 @@ $outlet = query("SELECT id, nama FROM tb_outlet");
 if (isset($_POST['simpan'])) {
     if (insertDataPengguna($_POST) > 0) {
         $_SESSION['inserted'] = true;
-        header('Location: pengguna.php');
+        echo "<script>window.location.href = 'pengguna.php'</script>";
     } else {
         $_SESSION['notInserted'] = true;
     }

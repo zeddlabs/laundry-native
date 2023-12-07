@@ -7,7 +7,7 @@ $outlet = query("SELECT id, nama FROM tb_outlet");
 if (isset($_POST['simpan'])) {
     if (insertDataPaket($_POST) > 0) {
         $_SESSION['inserted'] = true;
-        header('Location: paket.php');
+        echo "<script>window.location.href = 'paket.php'</script>";
     } else {
         $_SESSION['notInserted'] = true;
     }
