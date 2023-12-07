@@ -42,7 +42,7 @@ A web application to manage your laundry.
 
 ### Installation
 
-Here are the steps to run this flutter project on your local computer.
+Here are the steps to run this project.
 
 1. Give a star to this repo (optional).
 2. Clone this repo.
