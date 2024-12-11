@@ -57,7 +57,7 @@ Here are the steps to run this project.
 
 ## Author
 
-- [Mhd Zulfikar Pinem](https://github.com/zulfikarpinem)
+- [Mhd Zulfikar Pinem](https://github.com/zeddlabs)
 
 ## Contact
 
